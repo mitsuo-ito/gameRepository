@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.onload = function () {
+            document.getElementById("yes").onclick = myhandler;
+            document.getElementById("no").onclick = myhandler;
+        }
+        function myhandler(e) {
+            document.getElementById("status").textContent = e.target.textContent
+        }
+/*         function yeshandler(e) {
+            document.getElementById("status").textContent = e
+        }
+        function nohandler(e) {
+            document.getElementById("status").textContent = e
+        } */
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テスト</title>
+</head>
+<body>
+    <button id="yes">はい</button>
+    <button id="no">いいえ</button>
+    <h2 id="status"></h2>
+
+</body>
+</html>
